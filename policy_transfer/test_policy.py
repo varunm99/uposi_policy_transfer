@@ -15,7 +15,7 @@ import numpy as np
 
 import matplotlib.pyplot as plt
 from gym import wrappers
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 from policy_transfer.policies import mlp_policy
 from policy_transfer.policies.mirror_policy import *
 from policy_transfer.utils.common import *

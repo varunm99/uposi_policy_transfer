@@ -1,0 +1,7 @@
+__pycache__
+
+policy_transfer.egg-info/
+data/
+
+*.swp
+

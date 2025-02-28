@@ -7,7 +7,7 @@ import policy_transfer.envs
 from baselines import logger
 import sys
 import joblib, pickle
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 import numpy as np
 from mpi4py import MPI
 from policy_transfer.policies.mirror_policy import *

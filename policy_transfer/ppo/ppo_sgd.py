@@ -1,7 +1,7 @@
 from baselines.common import Dataset, explained_variance, fmt_row, zipsame
 from baselines import logger
 import baselines.common.tf_util as U
-import tensorflow as tf, numpy as np
+import tensorflow.compat.v1 as tf, numpy as np
 import time
 from baselines.common.mpi_adam import MpiAdam
 from baselines.common.mpi_moments import mpi_moments
@@ -9,7 +9,7 @@ from mpi4py import MPI
 from collections import deque
 
 import os, errno
-from utils.common import *
+from policy_transfer.utils.common import *
 import copy
 import gc
 
