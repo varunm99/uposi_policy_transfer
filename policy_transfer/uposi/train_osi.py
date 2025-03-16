@@ -107,7 +107,7 @@ if __name__ == '__main__':
                             hid_size=64, num_hid_layers=3, observation_permutation=env_up.env.obs_perm,
                             action_permutation=env_up.env.act_perm, soft_mirror=False)
 
-
+    logger.reset()
     # configure things and load the learned universal policy
     config_name = 'data/osi_data/' + name + '_' + args.env + '_' + str(dyn_params)
 
