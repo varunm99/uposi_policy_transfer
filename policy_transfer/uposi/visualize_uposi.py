@@ -135,8 +135,8 @@ if __name__ == '__main__':
             pred_mp.append(np.copy(o[-len(dyn_params):]))
             one_error += np.sum(np.square(true_mp[-1] - pred_mp[-1]))
             length += 1
-            # osi_env.render()
-            # time.sleep(0.01)
+            osi_env.render()
+            time.sleep(0.01)
 
             if np.random.random() < args.reset_mp_prob:
                 osi_env.env.param_manager.resample_parameters()
